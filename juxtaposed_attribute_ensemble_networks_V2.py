@@ -225,7 +225,7 @@ for i in range(0, number_of_rows):
             # the two models. Multiply by 10 to make the difference > 1 in
             # most of the cases. This promotes high weight if difference > 0.1
             # but low weight if difference < 0.1 
-            rmse = rmse * abs(list_of_dictionaries[0][fict_target].predict(X) - list_of_dictionaries[1][fict_target].predict(X))
+            # rmse = rmse * abs(list_of_dictionaries[0][fict_target].predict(X) - list_of_dictionaries[1][fict_target].predict(X))
             # rmse = rmse * 10 * abs(list_of_dictionaries[0][fict_target].predict(X) - list_of_dictionaries[1][fict_target].predict(X))
             
             # Add to sublist
